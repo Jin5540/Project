@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+	@media (max-width: 767px) {
+		.ServiceNavigation__ServiceNav {
+			display: none;
+		}
+	}
+	@media (min-width: 768px) {
+		.header_duplicate_menu {
+			display: none !important;
+		}
+	}
+	.ServiceNavigation__ServiceNav {
+		height: 36px;
+		background-color: transparent !important;
+		box-shadow: 0 1px 0 0 #e7e8ef;
+		padding: 6px 0;
+		font-size: 12px;
+		color: #6c738a;
+		z-index: 4;
+	}
+
+	.ServiceNavigation__ServiceNav__Nav {
+		display: flex;
+		height: 100%;
+		/* overflow: hidden; */
+	}
+
+	.ServiceNavigation__ServiceNav__NavGroup {
+		display: flex;
+		flex: 1 1;
+	}
+
+	.ServiceNavigation__ServiceNav__NavGroup--notice {
+		flex-grow: 2;
+	}
+
+	.ServiceNavigation__ServiceNav__NavGroup--user {
+		justify-content: flex-end;
+	}
+	.ServiceNavigation__ServiceNav__NavGroup--user .ServiceNavigation__ServiceNavItem {
+		margin-left: 8px;
+		margin-right: 0;
+	}
+
+	.ServiceNavigation__ServiceNav__Dropdown {
+		display: inline-block;
+		margin-left: 8px;
+	}
+
+	.ServiceNavigation__ServiceNav__Dropdown--divider:before {
+		position: absolute;
+		content: '';
+		width: 1px;
+		height: 11px;
+		background-color: #ced0da;
+		display: inline-block;
+		top: 7px;
+		left: 0;
+	}
+
+	.ServiceNavigation__ServiceNav__DropdownMenu {
+		margin-top: 6px;
+	}
+
+	.ServiceNavigation__ServiceNav__Icon {
+		color: #494e5f;
+		margin-right: 6px;
+	}
+
+	.ServiceNavigation__ServiceNav__Username {
+		display: inline-block;
+		max-width: 130px;
+		color: #313338;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	.ServiceNavigation__ServiceNavItem {
+		display: flex;
+		align-items: center;
+		color: #6c738a;
+		margin-right: 8px;
+	}
+
+	.ServiceNavigation__ServiceNavItem:hover,
+	.ServiceNavigation__ServiceNavItem:focus {
+		color: #6c738a;
+		text-decoration: none;
+	}
+
+	.ServiceNavigation__ServiceNavItem--primary {
+		color: #fff;
+	}
+
+	.ServiceNavigation__ServiceNavItem--primary:hover,
+	.ServiceNavigation__ServiceNavItem--primary:focus {
+		color: #fff;
+	}
+
+	.ServiceNavigation__ServiceNoticeContainer__Viewport {
+		display: none;
+		width: 100%;
+		border-radius: 12px;
+		background-color: #fff;
+		padding: 0 8px;
+		overflow: hidden;
+	}
+
+	.ServiceNavigation__ServiceNoticeContainer__NoticeRow {
+		height: 100%;
+		line-height: 24px;
+		text-align: left;
+	}
+
+	.ServiceNavigation__ServiceNoticeContainer__NoticeTypeBadge {
+		font-size: 10px;
+		margin-right: 8px;
+	}
+
+	/* bs4 style */
+	.ServiceNavigation__ServiceNav .btn-primary {
+		background-color: #609ae9;
+		border-color: #609ae9;
+	}
+	.ServiceNavigation__ServiceNav .btn-primary:hover {
+		background-color: #3e85e4;
+		border-color: #337ee3;
+	}
+	.ServiceNavigation__ServiceNav .btn-primary:active {
+		background-color: #337ee3;
+		border-color: #2876e1;
+	}
+
+	.ServiceNavigation__ServiceNav__Dropdown .dropdown-menu {
+		min-width: 160px;
+		padding: 4px 0;
+		margin: 6px 0 0;
+		font-size: 14px;
+		color: #313338;
+		list-style: none;
+		background-color: #fff;
+		background-clip: padding-box;
+		border: 1px solid #ced0da;
+		border-radius: 3px;
+		box-shadow: none;
+	}
+	.ServiceNavigation__ServiceNav__Dropdown .dropdown-item {
+		display: block;
+		width: 100%;
+		padding: 6px 12px;
+		clear: both;
+		color: #313338;
+		line-height: 24px;
+		text-align: inherit;
+		white-space: nowrap;
+		background-color: transparent;
+		border: 0;
+	}
+	.ServiceNavigation__ServiceNav__Dropdown .dropdown-item:focus,
+	.ServiceNavigation__ServiceNav__Dropdown .dropdown-item:hover {
+		color: #609ae9;
+		text-decoration: none;
+		background-color: rgba(96,154,233,.3);
+	}
+	.ServiceNavigation__ServiceNav__Dropdown .dropdown-item:active {
+		color: #fff;
+		text-decoration: none;
+		background-color: #609ae9;
+	}
+	.ServiceNavigation__ServiceNoticeContainer__NoticeTypeBadge.badge-warning {
+		color: #fff;
+		background-color: #ffa251;
+	}
+	.ServiceNavigation__ServiceNoticeContainer__NoticeTypeBadge.badge-success {
+		color: #fff;
+		background-color: #18bbb8;
+	}
+	.ServiceNavigation__ServiceNoticeContainer__NoticeTypeBadge.badge-danger {
+		color: #fff;
+		background-color: #ec4e60;
+	}
+	.ServiceNavigation__ServiceNoticeContainer__NoticeTypeBadge.badge-info {
+		color: #fff;
+		background-color: #609ae9;
+	}
+
+	.ServiceNavigation__ServiceNav__Nav.container {
+		min-height: initial;
+	}
+	.ServiceNavigation__ServiceNavItem .btn-xs {
+		padding: 1px 5px;
+		font-size: 12px;
+		line-height: 1.714286;
+		border-radius: 3px;
+	}
+	.ServiceNavigation__ServiceNavItem .btn-link {
+		font-weight: 400;
+		color: #609ae9;
+		background-color: transparent;
+	}
